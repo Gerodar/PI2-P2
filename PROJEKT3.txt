@@ -1,0 +1,10 @@
+A;1000;5
+C;2000;10
+B;5000;50
+Projekt1;1000;5
+Projekt2;2000;10
+Projekt3;1000;15
+Projekt4;1000;20
+Projekt5;1000;25
+Projekt6;2200;30
+Projekt13;20000;222

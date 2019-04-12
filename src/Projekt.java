@@ -1,8 +1,13 @@
-public class Projekt
+public class Projekt implements Comparable
 {
     public String pbez;
     private int gkost;
     public int pat, crt = -3;
+
+    Projekt()
+    {
+
+    }
 
     Projekt(String ebez, int ekost, int epat)
     {
@@ -83,6 +88,25 @@ public class Projekt
         }
 
         return false;
+    }
+
+    public int setPat(int epat)
+    {
+        if(epat > 1)
+        {
+            this.pat = epat;
+            return 1;
+        } else
+        {
+            return -1;
+        }
+    }
+
+    @Override
+    public int compareTo(Object o)
+    {
+        Projekt compare = (Projekt) o;
+        return (this.pbez.compareTo(compare.pbez));
     }
 }
 
